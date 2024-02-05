@@ -6,6 +6,7 @@ export default {
     setup () {
 
         const menu = ref([
+            { title: 'Home', link: '/' },
             { title: 'Tours', link: '' },
             { title: 'Parks', link: '' },
             { title: 'Operators', link: '' },
@@ -35,7 +36,7 @@ export default {
             <div class="hidden xl:flex items-center space-x-8">
                 <ul class="outline-none text-xl" v-for="object, objectIndex in menu" :key="objectIndex">
                     <li class="cursor-pointer">
-                        <a href="" class="hover:text-green-500 ease-in duration-300 hover:underline decoration-green-500">{{object.title}}</a>
+                        <router-link :to="object.link" class="hover:text-green-500 ease-in duration-300 hover:underline decoration-green-500">{{ object.title }}</router-link>
                     </li>
                 </ul>
             </div>
