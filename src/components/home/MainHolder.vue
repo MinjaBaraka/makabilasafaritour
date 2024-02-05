@@ -16,7 +16,7 @@ export default {
 
 <template>
     <section class="mb-10 min-h-[900px]">
-        <div class="container flex flex-col mx-auto rounded-md bg-center bg-no-repeat bg-cover min-h-[600px]" :style="{ backgroundImage: `url(${MainImage})` }">
+        <div class="container flex flex-col mx-auto rounded-md bg-center bg-no-repeat bg-cover min-h-[600px] mt-2" :style="{ backgroundImage: `url(${MainImage})` }">
             <div class="ml-10 mt-14 bg-white w-80 h-96 rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
                 <div class="container flex flex-col items-center mx-auto justify-center">
                     <h1 class="mt-10 text-xl font-bold text-[#808080]">Get Top African Safaris</h1>
