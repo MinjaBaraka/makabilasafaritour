@@ -8,7 +8,8 @@ export default {
         return {
             MainImage,
             Location,
-            Briefcase
+            Briefcase,
+            Calendar
         }
     }
 }
@@ -29,7 +30,7 @@ export default {
 
                         <label for="date" class="flex border-2 border-custom-green rounded-lg items-center p-2 px-16">
                                 <input type="date" id="date" placeholder="Date.." class="outline-none">
-                                <component :is="Calendar"/>
+                                <!-- <component :is="Calendar" class="w-6 h-6 fill-custom-green"/> -->
                         </label>
 
                         <label for="travellers" class="flex border-2 border-custom-green rounded-lg items-center p-2">
