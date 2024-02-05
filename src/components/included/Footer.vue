@@ -158,7 +158,7 @@ export default {
 
             <div class="container w-[100%] px-[15px] mx-auto  border-t-2 pt-[3rem] mb-12">
                 
-                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">© {{ currentYear }} <a href="" class="hover:underline decoration-green-500 hover:text-green-500">Makabila Safari tour</a>. All Rights Reserved.</span>
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">© {{ currentYear }} <a href="" class="hover:underline decoration-green-500 hover:text-green-500 capitalize">Makabila Safari tour</a>. All Rights Reserved.</span>
                 </div>
 
         </div>
