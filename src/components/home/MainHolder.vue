@@ -1,6 +1,6 @@
 <script>
 import { ref } from 'vue';
-import  MainImage  from '../../assets/images/mainHeader/2.jpg';
+import  MainImage  from '../../assets/images/mainHeader/2.png';
 
 import { Calendar, Location, Briefcase, Circle } from "../constant"
 export default {
@@ -27,7 +27,7 @@ export default {
 
 <template>
     <section class="mb-10 min-h-[800px]">
-        <div class="container flex flex-col mx-auto mt-2" >
+        <div class=" container flex flex-col mx-auto mt-2" >
             <div class="rounded-md bg-center bg-no-repeat bg-cover xl:min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
                 <div class="ml-10 my-14 bg-white w-80 h-96 rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
                     <div class="container flex flex-col items-center mx-auto justify-center">

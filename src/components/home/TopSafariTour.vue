@@ -1,7 +1,7 @@
 <script>
 import { ref } from 'vue'
 
-import MainImage from '../../assets/images/mainHeader/1.jpg';
+import MainImage from '../../assets/images/mainHeader/13.jpeg';
 
 export default {
     setup() {
@@ -37,10 +37,10 @@ export default {
             </div>
 
             <!-- swiper with image -->
-            <div class="rounded-b-lg bg-center bg-no-repeat bg-cover md:min-h-[600px] w-full"
+            <div class="rounded-b-lg bg-center bg-no-repeat bg-cover object-cover md:min-h-[700px] w-full"
                 :style="{ backgroundImage: `url(${MainImage})` }">
             </div>
-
+            
             <!-- More Safari Button -->
             <button
                 class="capitalize mt-4 flex items-center justify-center self-end bg-custom-green px-10 py-4 text-white rounded-lg">
@@ -49,4 +49,5 @@ export default {
 
         </div>
 
-    </section></template>
+    </section>
+</template>
