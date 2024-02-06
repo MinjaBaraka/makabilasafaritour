@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .animation_text {
+        @apply ease-in duration-200
+    }
+
+    .h1 {
+        @apply text-2xl font-bold text-custom-gray justify-start
+    }
+}

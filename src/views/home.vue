@@ -1,7 +1,9 @@
 <script setup>
-import { MainHolder,} from '../components';
+import { MainHolder, TopSafariTour, TopSafariOperator } from '../components';
 </script>
 
 <template>
   <MainHolder />
+  <TopSafariTour />
+  <TopSafariOperator />
 </template>

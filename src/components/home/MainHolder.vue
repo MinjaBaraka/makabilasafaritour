@@ -26,10 +26,10 @@ export default {
 </script>
 
 <template>
-    <section class="mb-10 min-h-[900px]">
+    <section class="mb-10 min-h-[800px]">
         <div class="container flex flex-col mx-auto mt-2" >
-            <div class="rounded-md bg-center bg-no-repeat bg-cover min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
-                <div class="ml-10 mt-14 bg-white w-80 h-96 rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
+            <div class="rounded-md bg-center bg-no-repeat bg-cover xl:min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
+                <div class="ml-10 my-14 bg-white w-80 h-96 rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
                     <div class="container flex flex-col items-center mx-auto justify-center">
                         <h1 class="mt-10 text-xl font-bold text-[#808080]">Get Top African Safaris</h1>
 
@@ -65,24 +65,24 @@ export default {
                 <!-- Three Box -->
                 <div class="container flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 xl:grid-cols-3 mx-auto gap-y-10 gap-x-10 px-6">
                     <!-- Top Tour Operators -->
-                    <label for="isTopTourOperatorsChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isTopTourOperatorsChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isTopTourOperatorsChecked" class="sr-only outline-none" v-model="isTopTourOperatorsChecked">
                         <component :is="Circle" class="w-8 h-8  fill-green-500" :class="{ 'bg-green-500 rounded-full': isTopTourOperatorsChecked }"/>
-                        <h1 class="w-full md:w-40">Top Tour Operators</h1>
+                        <h1 class="w-52 text-xl">Top Tour Operators</h1>
                     </label>
 
                     <!-- Best Parks & Beachers -->
-                    <label for="isBestParksBeachersChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isBestParksBeachersChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isBestParksBeachersChecked" class="sr-only outline-none" v-model="isBestParksBeachersChecked">
                         <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBestParksBeachersChecked }"/>
-                        <h1 class="w-full md:w-40">Parks & Beachers</h1>
+                        <h1 class="w-52 text-xl">Parks & Beachers</h1>
                     </label>
 
                      <!-- Better Tour Price -->
-                    <label for="isBetterTourPriceChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isBetterTourPriceChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isBetterTourPriceChecked" class="sr-only outline-none" v-model="isBetterTourPriceChecked">
                         <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBetterTourPriceChecked }"/>
-                        <h1 class="w-full md:w-40">Better Tour Price</h1>
+                        <h1 class="w-52 text-xl">Better Tour Price</h1>
                     </label>
                 </div>
 

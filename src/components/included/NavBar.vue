@@ -24,8 +24,8 @@ export default {
 </script>
 
 <template>
-    <header class="sticky top-0 z-50">
-        <nav class="container mx-auto flex items-center justify-between py-6 px-6 xl:px-0 bg-white">
+    <header class="sticky top-0 z-50 ">
+        <nav class="container mx-auto flex items-center justify-between py-8 px-6 xl:px-0 bg-white">
 
             <!-- Logo -->
             <div class="">
@@ -35,8 +35,8 @@ export default {
             <!-- Menu List -->
             <div class="hidden xl:flex items-center space-x-8">
                 <ul class="outline-none text-xl" v-for="object, objectIndex in menu" :key="objectIndex">
-                    <li class="cursor-pointer">
-                        <router-link :to="object.link" class="hover:text-green-500 ease-in duration-300 hover:underline decoration-green-500">{{ object.title }}</router-link>
+                    <li class="cursor-pointer ">
+                        <router-link :to="object.link" class="hover:text-green-500 animation_text hover:underline decoration-green-500">{{ object.title }}</router-link>
                     </li>
                 </ul>
             </div>
