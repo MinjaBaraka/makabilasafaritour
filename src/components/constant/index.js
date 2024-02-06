@@ -4,6 +4,7 @@ import Envelope from "../../assets/svgs/icons/envelope.svg";
 import Location from "../../assets/svgs/solid/map-marker-alt.svg";
 import Calendar from "../../assets/svgs/solid/calendar-alt.svg";
 import Briefcase from "../../assets/svgs/regular/briefcase-line.svg";
+import Circle from "../../assets/svgs/regular/circle.svg";
 
 // Social Media
 import Twitter from "../../assets/svgs/brands/twitter.svg";
@@ -19,6 +20,7 @@ export {
     Location, 
     Calendar,
     Briefcase,
+    Circle,
 
     // Social Media
     Twitter,
