@@ -64,32 +64,26 @@ export default {
 
                 <!-- Three Box -->
                 <div class="container flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 xl:grid-cols-3 mx-auto gap-y-10 gap-x-10 px-6">
-                <!-- Top Tour Operators -->
-                <div class="flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg">
-                    <label for="isTopTourOperatorsChecked" class="w-max">
-                    <input type="checkbox" name="" id="isTopTourOperatorsChecked" class="sr-only outline-none" v-model="isTopTourOperatorsChecked">
-                    <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isTopTourOperatorsChecked }"/>
+                    <!-- Top Tour Operators -->
+                    <label for="isTopTourOperatorsChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                        <input type="checkbox" name="" id="isTopTourOperatorsChecked" class="sr-only outline-none" v-model="isTopTourOperatorsChecked">
+                        <component :is="Circle" class="w-8 h-8  fill-green-500" :class="{ 'bg-green-500 rounded-full': isTopTourOperatorsChecked }"/>
+                        <h1 class="w-full md:w-40">Top Tour Operators</h1>
                     </label>
-                    <h1 class="w-full md:w-40">Top Tour Operators</h1>
-                </div>
 
-                <!-- Best Parks & Beachers -->
-                <div class="flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg">
-                    <label for="isBestParksBeachersChecked">
-                    <input type="checkbox" name="" id="isBestParksBeachersChecked" class="sr-only outline-none" v-model="isBestParksBeachersChecked">
-                    <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBestParksBeachersChecked }"/>
+                    <!-- Best Parks & Beachers -->
+                    <label for="isBestParksBeachersChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                        <input type="checkbox" name="" id="isBestParksBeachersChecked" class="sr-only outline-none" v-model="isBestParksBeachersChecked">
+                        <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBestParksBeachersChecked }"/>
+                        <h1 class="w-full md:w-40">Parks & Beachers</h1>
                     </label>
-                    <h1 class="w-full md:w-40">Parks & Beachers</h1>
-                </div>
 
-                <!-- Better Tour Price -->
-                <div class="flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg">
-                    <label for="isBetterTourPriceChecked">
-                    <input type="checkbox" name="" id="isBetterTourPriceChecked" class="sr-only outline-none" v-model="isBetterTourPriceChecked">
-                    <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBetterTourPriceChecked }"/>
+                     <!-- Better Tour Price -->
+                    <label for="isBetterTourPriceChecked" class=" flex items-center justify-between space-x-4 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                        <input type="checkbox" name="" id="isBetterTourPriceChecked" class="sr-only outline-none" v-model="isBetterTourPriceChecked">
+                        <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBetterTourPriceChecked }"/>
+                        <h1 class="w-full md:w-40">Better Tour Price</h1>
                     </label>
-                    <h1 class="w-full md:w-40">Better Tour Price</h1>
-                </div>
                 </div>
 
     </section>
