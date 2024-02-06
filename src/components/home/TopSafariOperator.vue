@@ -1,5 +1,5 @@
 <script>
-import MainImage from '../../assets/images/mainHeader/2.png';
+import MainImage from '../../assets/images/mainHeader/1.png';
 export default {
     setup() {
 

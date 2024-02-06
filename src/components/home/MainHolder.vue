@@ -1,6 +1,6 @@
 <script>
 import { ref } from 'vue';
-import  MainImage  from '../../assets/images/mainHeader/2.png';
+import  MainImage  from '../../assets/images/mainHeader/5.jpeg';
 
 import { Calendar, Location, Briefcase, Circle } from "../constant"
 export default {
