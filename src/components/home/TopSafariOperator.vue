@@ -16,7 +16,7 @@ export default {
             <h1 class="h1">Top Tours Operators</h1>
 
             
-
+        
         </div>
     </section>
 </template>
