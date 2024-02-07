@@ -29,14 +29,14 @@ export default {
 
             <!-- Logo -->
             <div class="">
-                <h1 class="text-green-500 font-bold text-2xl">Makabila Safari Tour</h1>
+                <h1 class="text-green-500 font-bold text-2xl">Makabila Safari</h1>
             </div>
 
             <!-- Menu List -->
             <div class="hidden xl:flex items-center space-x-8">
-                <ul class="outline-none text-xl" v-for="object, objectIndex in menu" :key="objectIndex">
+                <ul class="outline-none" v-for="object, objectIndex in menu" :key="objectIndex">
                     <li class="cursor-pointer ">
-                        <router-link :to="object.link" class="hover:text-green-500 animation_text hover:underline decoration-green-500">{{ object.title }}</router-link>
+                        <router-link :to="object.link" class="hover:text-green-500 animation_text">{{ object.title }}</router-link>
                     </li>
                 </ul>
             </div>
