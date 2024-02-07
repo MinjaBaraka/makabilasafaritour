@@ -28,38 +28,38 @@ export default {
 <template>
     <section class="mb-10 min-h-[800px]">
         <div class=" container flex flex-col mx-auto mt-2" >
-            <div class="rounded-md bg-center bg-no-repeat bg-cover xl:min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">                
-            </div>    
-            <div class="absolute ml-10 my-14 bg-white w-80 h-3/6 rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
-                        <div class="container flex flex-col items-center mx-auto justify-center">
-                            <h1 class="mt-10 text-xl font-bold text-[#808080]">Get Top African Safaris</h1>
+            <div class="rounded-md bg-center bg-no-repeat bg-cover min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
+                <div class="ml-10 my-14 bg-white w-80  rounded-md shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]">
+                    <div class="container flex flex-col items-center mx-auto justify-center">
+                        <h1 class="mt-10 text-xl font-bold text-[#808080]">Get Top African Safaris</h1>
 
-                            <form action="" class="flex flex-col justify-between items-center mt-10 space-y-6">
-                                <label for="where" class="flex border-2 border-custom-green rounded-lg items-center p-2">
-                                    <input type="text" id="where" placeholder="Where.." class="outline-none  py-2 px-2">
-                                    <component :is="Location" class="w-6 h-6 fill-custom-green"/>
-                                </label>
+                        <form action="" class="flex flex-col justify-between items-center mt-10 space-y-6 mb-10">
+                            <label for="where" class="flex border-2 border-custom-green rounded-lg items-center p-2">
+                                <input type="text" id="where" placeholder="Where.." class="outline-none  py-2 px-2">
+                                <component :is="Location" class="w-6 h-6 fill-custom-green"/>
+                            </label>
 
-                                <!-- <label for="date" class="flex border-2 border-custom-green rounded-lg items-center p-2 px-16">
+                            <!-- <label for="date" class="flex border-2 border-custom-green rounded-lg items-center p-2 px-16">
                                     <input type="date" id="date" placeholder="Date.." class="outline-none">
                                     <component :is="Calendar" class="w-6 h-6 fill-custom-green"/> pl-10 pr-4
                             </label> -->
 
-                                 <!-- Date input with placeholder and icon -->
-                                 <div class="relative flex items-center border-2 border-custom-green rounded-lg p-2 px-8">
-                                    <input type="date" id="date" class="flex-grow outline-none py-2 px-8" placeholder="mm/dd/yyyy">
-                                    <component :is="Calendar" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 fill-custom-green"/>
-                                </div>
+                             <!-- Date input with placeholder and icon -->
+                             <div class="relative flex items-center border-2 border-custom-green rounded-lg p-2 px-8">
+                                <input type="date" id="date" class="flex-grow outline-none py-2 px-8" placeholder="mm/dd/yyyy">
+                                <component :is="Calendar" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 fill-custom-green"/>
+                            </div>
 
-                                <label for="travellers" class="flex border-2 border-custom-green rounded-lg items-center p-2">
-                                    <input type="text" id="travellers" placeholder="Travellers" class="outline-none py-2 px-2">
-                                    <component :is="Briefcase" class="w-6 h-6 fill-custom-green"/>
-                                </label>
+                            <label for="travellers" class="flex border-2 border-custom-green rounded-lg items-center p-2">
+                                <input type="text" id="travellers" placeholder="Travellers" class="outline-none py-2 px-2">
+                                <component :is="Briefcase" class="w-6 h-6 fill-custom-green"/>
+                            </label>
 
-                                <input type="button" value="Get Safari" class="cursor-pointer bg-custom-green w-full px-12 py-3 rounded-lg text-white">
-                            </form>
-                        </div>
-                    </div>        
+                            <input type="button" value="Get Safari" class="cursor-pointer bg-custom-green w-full px-12 py-3 rounded-lg text-white">
+                        </form>
+                    </div>
+                </div>
+            </div>            
         </div>
 
                 <!-- Three Box -->
