@@ -10,15 +10,15 @@ import Tarangire from "./tabs/Tarangire.vue"
 
 <template>
     <TabWrapper>
-        <Zanzibar title="Zanzibar" />
+        <Zanzibar title="Zanzibar"  class="hidden xl:flex" />
 
-        <Serengeti title="Serengeti" />
+        <Serengeti title="Serengeti"  class="hidden xl:flex"/>
         
-        <NgorongoroCrater title="Ngorongoro Crater" />        
+        <NgorongoroCrater title="Ngorongoro Crater"  class="hidden xl:flex"/>        
         
-        <Tarangire title="Tarangire" />
+        <Tarangire title="Tarangire"  class="hidden xl:flex"/>
         
-        <Manyara title="Manyara" />
+        <Manyara title="Manyara"  class="hidden xl:flex"/>
 
     </TabWrapper>
 

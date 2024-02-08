@@ -33,7 +33,7 @@ export default {
                     <div class="container flex flex-col items-center mx-auto justify-center">
                         <h1 class="mt-10 text-xl font-bold text-[#808080]">Get Top African Safaris</h1>
 
-                        <form action="" class="flex flex-col justify-between items-center mt-10 space-y-6 mb-10">
+                        <form action="" class="flex flex-col justify-between items-center space-y-6 my-10">
                             <label for="where" class="flex border-2 border-custom-green rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none  py-2 px-2">
                                 <component :is="Location" class="w-6 h-6 fill-custom-green"/>

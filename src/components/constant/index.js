@@ -5,6 +5,8 @@ import Location from "../../assets/svgs/solid/map-marker-alt.svg";
 import Calendar from "../../assets/svgs/solid/calendar-alt.svg";
 import Briefcase from "../../assets/svgs/regular/briefcase-line.svg";
 import Circle from "../../assets/svgs/regular/circle.svg";
+import Start from "../../assets/svgs/regular/star.svg";
+import Heart from "../../assets/svgs/regular/heart.svg";
 
 // Social Media
 import Twitter from "../../assets/svgs/brands/twitter.svg";
@@ -21,6 +23,8 @@ export {
     Calendar,
     Briefcase,
     Circle,
+    Start,
+    Heart,
 
     // Social Media
     Twitter,
