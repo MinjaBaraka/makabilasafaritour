@@ -1,10 +1,17 @@
 <script>
 import MainImage from '../../assets/images/mainHeader/1.png';
+import { ref } from 'vue';
 export default {
     setup () {
 
+          const iconMenu = ref([
+            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
+            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
+            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
+        ])
+
         return {
-            MainImage,
+            iconMenu,
         }
     }
 }
@@ -17,11 +24,16 @@ export default {
 
 
         <!-- Grid Main -->
-        <div class="container flex flex-col md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6">
+        <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6 mt-10">
 
             <!-- Grid Container -->
-            <div class="container flex flex-col mx-auto items-center justify-center rounded-md shadow-lg w-96 h-96 mt-10">
+            <div class="flex flex-col items-center justify-center h-96  w-[100%]" v-for="object, objectIndex in iconMenu" :key="objectIndex">
 
+                <img :src="object.imgUrl" alt="Main Image" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute xl:mt-72 mt-60 xl:mr-28">
+                    <h1 class=" text-white text-3xl">{{object.title}}</h1>
+                </div>
+                
             </div>
 
         </div>

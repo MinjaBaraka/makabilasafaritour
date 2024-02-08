@@ -27,9 +27,9 @@ export default {
 
             
             <!-- Grid -->
-            <div class="grid_main">
-                <div class="grid_containter" v-for="object, objectIndex in iconMenu" :key="objectIndex">
-                    <div class="h-48 w-80 flex items-center justify-center -mt-10">
+            <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6 mt-10">
+                <div class="flex flex-col items-center justify-center bg-blue-50 h-96" v-for="object, objectIndex in iconMenu" :key="objectIndex">
+                    <div class="h-48 w-80 flex items-center justify-center mt-10">
                         <img :src="object.imgUrl" alt="" class="w-full h-full object-cover">
                     </div>
                    <div class="flex items-center space-x-24 md:grid grid-cols-2 cursor-pointer mx-8">
