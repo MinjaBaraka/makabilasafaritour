@@ -1,13 +1,15 @@
 <script>
-import MainImage from '../../assets/images/mainHeader/1.png';
+import Blog1 from '../../assets/images/mainHeader/3.jpeg';
+import Blog2 from '../../assets/images/mainHeader/5.jpeg';
+import Blog3 from '../../assets/images/mainHeader/12.jpeg';
 import { ref } from 'vue';
 export default {
     setup () {
 
           const iconMenu = ref([
-            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
-            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
-            { title: 'Top Tanzania Safari Beach', imgUrl: MainImage },
+            { title: 'Top Tanzania Safari Beach', imgUrl: Blog1 },
+            { title: 'Top Tanzania Safari Beach', imgUrl: Blog2 },
+            { title: 'Top Tanzania Safari Beach', imgUrl: Blog3 },
         ])
 
         return {
@@ -27,12 +29,13 @@ export default {
         <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6 mt-10">
 
             <!-- Grid Container -->
-            <div class="flex flex-col items-center justify-center h-96  w-[100%]" v-for="object, objectIndex in iconMenu" :key="objectIndex">
+            <div class="flex flex-col  justify-center h-96  w-[100%]" v-for="object, objectIndex in iconMenu" :key="objectIndex">
 
-                <img :src="object.imgUrl" alt="Main Image" class="w-full h-full object-cover rounded-lg">
-                <div class="absolute xl:mt-72 mt-60 xl:mr-28">
-                    <h1 class=" text-white text-3xl">{{object.title}}</h1>
+                <div class="w-full h-80 mb-6">
+                    <img :src="object.imgUrl" alt="Main Image" class="h-full w-full object-cover rounded-lg">
                 </div>
+                
+                <h1 class="text-3xl font-bold px-2">{{ object.title }}</h1>
                 
             </div>
 

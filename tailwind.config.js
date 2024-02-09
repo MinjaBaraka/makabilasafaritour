@@ -8,6 +8,9 @@ export default {
         "custom-gray": "#808080",
         "Custom-yellow": "#FFFF00",
       },
+      boxShadow: {
+        "shadow_container": "shadow-[0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)]"
+      }
     },
   },
   plugins: [],

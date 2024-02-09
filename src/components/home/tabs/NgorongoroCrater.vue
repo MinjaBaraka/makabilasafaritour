@@ -1,5 +1,5 @@
 <script>
-import MainImage from '../../../assets/images/mainHeader/13.jpeg';
+import MainImage from '../../../assets/images/mainHeader/5.jpeg';
 import { inject } from 'vue';
 export default {
     props: [
