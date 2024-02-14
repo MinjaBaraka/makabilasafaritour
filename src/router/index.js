@@ -4,23 +4,23 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("../views/home.vue")
+    component: () => import("../views/home.vue"),
   },
-//   {
-//     path: "",
-//     name: "",
-//     // component: () => import("")
-//   },
-//   {
-//     path: "",
-//     name: "",
-//     // component: () => import("")
-//   },
-//   {
-//     path: "",
-//     name: "",
-//     // component: () => import("")
-//   },
+  {
+    path: "/Tours",
+    name: "Tours",
+    component: () => import("../views/SafariTour.vue"),
+  },
+  //   {
+  //     path: "",
+  //     name: "",
+  //     // component: () => import("")
+  //   },
+  //   {
+  //     path: "",
+  //     name: "",
+  //     // component: () => import("")
+  //   },
 ];
 
 const router = createRouter({

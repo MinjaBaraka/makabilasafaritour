@@ -4,6 +4,7 @@ import  MainImage  from '../../assets/images/mainHeader/5.jpeg';
 
 import { Calendar, Location, Briefcase, Circle } from "../constant"
 export default {
+    name: "Main Holder",
     setup () {
 
         // Individual states for each checkbox
@@ -34,24 +35,22 @@ export default {
                         <h1 class="mt-10 text-xl font-bold text-custom-gray">Get Top African Safaris</h1>
 
                         <form action="" class="flex flex-col items-center space-y-6 my-10">
+                            <!-- Where... -->
                             <label for="where" class="flex border-2 border-custom-green rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none  py-2 px-2">
                                 <component :is="Location" class="w-6 h-6 fill-custom-green"/>
                             </label>
 
-                            <!-- <label for="date" class="flex border-2 border-custom-green rounded-lg items-center p-2 px-16">
-                                    <input type="date" id="date" placeholder="Date.." class="outline-none">
-                                    <component :is="Calendar" class="w-6 h-6 fill-custom-green"/> pl-10 pr-4
-                            </label> -->
+                            <!-- Date... -->
+                            <label for="date" class="relative flex items-center justify-between ring-2 ring-custom-green rounded-lg w-full h-14">
+                                     <input type="date" id="date" class="flex-grow outline-none py-2 px-8 sr-only">
+                                     <p class="ml-4 text-custom-gray">Date...</p>
+                                    <component :is="Calendar" class="absolute left-64 top-1/2 transform -translate-y-1/2 w-6 h-6 fill-custom-green"/>                         
+                            </label>
 
-                             <!-- Date input with placeholder and icon -->
-                             <div class="relative flex items-center border-2 border-custom-green rounded-lg p-2 px-8">
-                                <input type="date" id="date" class="flex-grow outline-none py-2 px-8" placeholder="mm/dd/yyyy">
-                                <component :is="Calendar" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 fill-custom-green"/>
-                            </div>
-
+                            <!-- Travellers... -->
                             <label for="travellers" class="flex border-2 border-custom-green rounded-lg items-center p-2">
-                                <input type="text" id="travellers" placeholder="Travellers" class="outline-none py-2 px-2">
+                                <input type="text" id="travellers" placeholder="Travellers..." class="outline-none py-2 px-2">
                                 <component :is="Briefcase" class="w-6 h-6 fill-custom-green"/>
                             </label>
 
@@ -62,29 +61,30 @@ export default {
             </div>            
         </div>
 
-                <!-- Three Box -->
+                <!-- Open Three CheckBox -->
                 <div class="container flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 xl:grid-cols-3 mx-auto gap-y-10 gap-x-10 px-6">
                     <!-- Top Tour Operators -->
-                    <label for="isTopTourOperatorsChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isTopTourOperatorsChecked" class="flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isTopTourOperatorsChecked" class="sr-only outline-none" v-model="isTopTourOperatorsChecked">
                         <component :is="Circle" class="w-8 h-8  fill-green-500" :class="{ 'bg-green-500 rounded-full': isTopTourOperatorsChecked }"/>
                         <h1 class="w-52 text-xl">Top Tour Operators</h1>
                     </label>
 
                     <!-- Best Parks & Beachers -->
-                    <label for="isBestParksBeachersChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isBestParksBeachersChecked" class="flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isBestParksBeachersChecked" class="sr-only outline-none" v-model="isBestParksBeachersChecked">
                         <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBestParksBeachersChecked }"/>
                         <h1 class="w-52 text-xl">Parks & Beachers</h1>
                     </label>
 
                      <!-- Better Tour Price -->
-                    <label for="isBetterTourPriceChecked" class=" flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
+                    <label for="isBetterTourPriceChecked" class="flex items-center space-x-8 ring-2 ring-green-500 px-10 py-8 rounded-lg cursor-pointer">
                         <input type="checkbox" name="" id="isBetterTourPriceChecked" class="sr-only outline-none" v-model="isBetterTourPriceChecked">
                         <component :is="Circle" class="w-8 h-8 cursor-pointer fill-green-500" :class="{ 'bg-green-500 rounded-full': isBetterTourPriceChecked }"/>
                         <h1 class="w-52 text-xl">Better Tour Price</h1>
                     </label>
                 </div>
+                <!-- Close Three CheckBox -->
 
     </section>
 </template>

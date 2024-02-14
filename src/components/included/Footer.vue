@@ -124,7 +124,7 @@ export default {
                     <ul class="cursor-pointer space-y-4">
                         <li class="flex items-center space-x-4 group">
                                 <component :is="Envelope" class="fill-current group-hover:fill-green-500"/>
-                            <span class="underline group-hover:text-green-500">info@makabilasafaris.com</span>
+                            <span class="underline group-hover:text-green-500">info@makabilasafari.com</span>
                         </li>
 
                         <li class="flex items-center space-x-4 group">

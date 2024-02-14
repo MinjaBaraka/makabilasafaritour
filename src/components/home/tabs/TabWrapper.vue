@@ -1,7 +1,7 @@
 <script>
 import { ref, provide } from 'vue'
 export default {
-
+    name: "Tab Wrapper",
     setup (props, { slots }) {
 
         const tabMenu = ref(slots.default().map((object) => object.props.title))

@@ -6,6 +6,7 @@ import NgorongoroCrater from "./tabs/NgorongoroCrater.vue"
 import Serengeti from "./tabs/Serengeti.vue"
 import Tarangire from "./tabs/Tarangire.vue"
 
+
 </script>
 
 <template>

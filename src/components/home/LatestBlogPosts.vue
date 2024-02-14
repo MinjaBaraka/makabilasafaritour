@@ -4,6 +4,7 @@ import Blog2 from '../../assets/images/mainHeader/5.jpeg';
 import Blog3 from '../../assets/images/mainHeader/12.jpeg';
 import { ref } from 'vue';
 export default {
+    name: "Lastest Blog Posts",
     setup () {
 
           const iconMenu = ref([
@@ -21,25 +22,25 @@ export default {
 
 <template>
   <section class="mb-20">
-    <div class="container flex flex-col mx-auto  items-start justify-center px-2">
+    <div class="container flex flex-col mx-auto  items-start justify-center px-3">
         <h1 class="h1">Latest Blog posts</h1>
 
 
-        <!-- Grid Main -->
+        <!-- Open Grid -->
         <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6 mt-10">
 
-            <!-- Grid Container -->
-            <div class="flex flex-col  justify-center h-96  w-[100%]" v-for="object, objectIndex in iconMenu" :key="objectIndex">
+            <!-- Open Grid Container -->
+            <div class="flex flex-col justify-center w-full" v-for="object, objectIndex in iconMenu" :key="objectIndex">
 
                 <div class="w-full h-80 mb-6">
                     <img :src="object.imgUrl" alt="Main Image" class="h-full w-full object-cover rounded-lg">
                 </div>
                 
-                <h1 class="text-3xl font-bold px-2">{{ object.title }}</h1>
-                
+                <h1 class="-mt-20 md:text-4xl text-2xl text-white font-bold px-2">{{ object.title }}</h1>                
             </div>
-
+            <!-- Close Grid Container -->
         </div>
+        <!-- Close Grid -->
     </div>
   </section>
 </template>
