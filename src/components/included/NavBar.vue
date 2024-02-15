@@ -43,11 +43,11 @@ export default {
 
             <!-- Search -->
             <div class="hidden xl:block">
-                <form action="" class="flex space-x-4">
-                    <label for="searchSafari">
-                        <component :is="Search" class="fill-current stroke-green-500 cursor-pointer"/>
+                <form action="" class="flex">
+                    <label for="search" class="relative flex rounded-lg items-center p-2">
+                        <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
+                        <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
                     </label>
-                    <input type="text" id="searchSafari" placeholder="search..." class="placeholder:italic border-b-2 border-green-500 w-48 outline-none">
                 </form>
             </div>
 
@@ -71,10 +71,10 @@ export default {
                            <!-- Search -->
                     <div class="xl:hidden flex mb-10">
                         <form action="" class="flex space-x-4">
-                            <label for="searchSafari">
-                                <component :is="Search" class="fill-current stroke-green-500 cursor-pointer"/>
+                            <label for="search" class="relative flex rounded-lg items-center p-2">
+                                <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
+                                <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
                             </label>
-                            <input type="text" id="searchSafari" placeholder="search..." class="placeholder:italic placeholder:text-xl border-b-2 border-green-500 w-36 outline-none">
                         </form>
                     </div>
             </div></div>

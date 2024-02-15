@@ -86,33 +86,44 @@ export default {
   <section class="">
      <div class="container flex flex-col mx-auto  items-start justify-center px-3">
             <h1 class="h1">Our Testimonials</h1>
-                <div class="container flex flex-col  mx-auto">
+                <div class="container flex flex-col  mx-auto md:px-4 ">
                         <div class="items-center justify-center py-10">
                             <!-- swiper -->
                             <swiper
-                                    :modules="modules"
-                                    :slides-per-view="2"
+                                    :modules="modules"                                    
                                     :autoplay="{
                                         delay: 7000,
                                         disableOnInteraction: false,
                                         pauseOnMouseEnter: false
                                     }"
+                                    :breakpoints="{
+                                        // Breakpoint for medium screens
+                                        640: {
+                                            slidesPerView: 1,
+                                            spaceBetween: 10
+                                        },
+                                        // Breakpoint for extra large screens
+                                        1024: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 20
+                                        }
+                                    }"
                                     :thumbs="{ swiper: thumbsSwiper }"
                                     :mousewheel="true"
                                     :pagination="{ clickable: true }"
                                     @swiper="onSwiper"
-                                    @slideChange="onSlideChange"
+                                    @slideChange="onSlideChange"                                      
                                 >
                                   <SwiperSlide   v-for="object, objectIndex in testimonial" :key="objectIndex" class="container flex mx-auto items-center justify-center cursor-pointer mb-20">                                       
                                              <div class="relative flex items-center max-w-xl justify-between">
                                                 <img :src="object.imageUrl" alt="FeedBack" class="w-32 h-32 rounded-full">
                                                 <div class="flex flex-col justify-center">
                                                     <div class="flex flex-row justify-between mx-2">
-                                                       <h2 class="text-3xl md:text-2xl font-bold mb-2">
+                                                       <h2 class="xl:text-3xl text-2xl text-[#5252FF] font-bold mb-2">
                                                               {{ object.name }}                                    
                                                        </h2>
                                                         <div class="flex flex-row items-center space-x-2">
-                                                            <component :is="object.icon" class="w-6 h-6 fill-amber-500" v-for="n in 5" :key="n"/>
+                                                            <component :is="object.icon" class="w-6 h-6 fill-amber-500" />
                                                             
                                                             <p class="text-sm font-semibold">{{ object.rate }}</p>
                                                         </div>
@@ -124,6 +135,7 @@ export default {
                                              </div>
                                   </SwiperSlide>  
                             </swiper>
+                            <!-- v-for="n in 5" :key="n" -->
                         </div>
                     </div>   
 
