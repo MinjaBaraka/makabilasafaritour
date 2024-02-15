@@ -1,5 +1,5 @@
 <script setup>
-import { MainHolder, TopSafariTour, TopSafariOperator, LatestBlogPosts } from '../components';
+import { MainHolder, TopSafariTour, TopSafariOperator, LatestBlogPosts, OurTestimonials } from '../components';
 </script>
 
 <template>
@@ -7,4 +7,5 @@ import { MainHolder, TopSafariTour, TopSafariOperator, LatestBlogPosts } from '.
   <TopSafariTour />
   <TopSafariOperator />
   <LatestBlogPosts />
+  <OurTestimonials />
 </template>
