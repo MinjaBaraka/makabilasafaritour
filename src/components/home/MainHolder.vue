@@ -38,19 +38,19 @@ export default {
                             <!-- Where... -->
                             <label for="where" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
-                                <component :is="Location" class="absolute left-[25%] w-6 h-6 fill-custom-green"/>
+                                <component :is="Location" class="absolute xl:left-[25%] md:left-[30%] left-[72%] w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <!-- Date... -->
                             <label for="date" class="flex  rounded-lg items-center p-2">
-                                     <input datepicker type="text" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg" placeholder="Select date">                                    
-                                    <component :is="Calendar" class="absolute left-[25%] w-6 h-6 fill-custom-green"/>
+                                     <input datepicker type="text" id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg" placeholder="Select date">                                    
+                                    <component :is="Calendar" class="absolute xl:left-[25%] md:left-[30%] left-[72%] w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <!-- Travellers... -->
                             <label for="travellers" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="travellers" placeholder="Travellers..." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
-                                <component :is="Briefcase" class="absolute left-[25%] w-6 h-6 fill-custom-green"/>
+                                <component :is="Briefcase" class="absolute xl:left-[25%] md:left-[30%] left-[72%] w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <input type="button" value="Get Safari" class="cursor-pointer bg-custom-green w-full px-12 py-3 rounded-lg text-white">

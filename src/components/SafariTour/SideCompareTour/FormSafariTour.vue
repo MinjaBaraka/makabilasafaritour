@@ -26,7 +26,7 @@ export default {
 
                  <!-- Date... -->
                  <label for="StartDate" class="flex  rounded-lg items-center p-2">
-                    <input datepicker type="text" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg" placeholder="Select date">
+                    <input datepicker type="text" id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg" placeholder="Select date">
                     <component :is="Calendar" class="absolute right-[8%] w-6 h-6 fill-custom-green"/>
                 </label>
 
