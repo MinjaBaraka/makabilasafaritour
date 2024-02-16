@@ -46,9 +46,9 @@ export default {
                 <!-- Search -->
                 <div class="hidden xl:block">
                     <form action="" class="flex">
-                        <label for="search" class="relative flex rounded-lg items-center p-2">
+                        <label for="search" class="relative flex rounded-lg items-center p-2 cursor-pointer">
                             <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
-                            <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
+                            <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
                         </label>
                     </form>
                 </div>
@@ -74,9 +74,9 @@ export default {
                            <!-- Search -->
                     <div class="xl:hidden flex mb-10">
                         <form action="" class="flex space-x-4">
-                            <label for="search" class="relative flex rounded-lg items-center p-2">
-                                <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
-                                <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
+                            <label for="search" class="relative flex rounded-lg items-center p-2 cursor-pointer">
+                                <component :is="Search" class="absolute right-[10%] w-6 h-6 fill-custom-green"/>
+                                <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
                             </label>
                         </form>
                     </div>
