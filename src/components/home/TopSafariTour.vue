@@ -23,6 +23,4 @@ import Tarangire from "./tabs/Tarangire.vue"
 
     </TabWrapper>
 
-    <!--  -->
-
 </template>

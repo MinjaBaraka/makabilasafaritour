@@ -64,12 +64,12 @@ export default {
             },
         ]);
 
-        const onSwiper = (swiper) => {
-            console.log(swiper);
-        };
-        const onSlideChange = () => {
-            console.log('slide change');
-        };
+            const onSwiper = (swiper) => {
+                console.log(swiper);
+            };
+            const onSlideChange = () => {
+                console.log('slide change');
+            };
 
         return {
             testimonial,
