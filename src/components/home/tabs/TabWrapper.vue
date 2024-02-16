@@ -1,8 +1,8 @@
 <script>
 import SafariTour1 from '../../../assets/images/mainHeader/1.jpg';
 import SafariTour2 from '../../../assets/images/mainHeader/5.jpeg';
-import SafariTour3 from '../../../assets/images/mainHeader/1.png';
-import SafariTour4 from '../../../assets/images/mainHeader/12.png';
+// import SafariTour3 from '../../../assets/images/mainHeader/1.png';
+// import SafariTour4 from '../../../assets/images/mainHeader/12.png';
 import SafariTour5 from '../../../assets/images/mainHeader/13.jpeg';
 
 import { ArrowRightCircle, Start, Briefcase, History } from "../../constant"
@@ -68,7 +68,7 @@ export default {
 
                 {
                     title: 'Ngorongoro Crater',
-                    bgImageUrl: SafariTour3,
+                    bgImageUrl: SafariTour1,
                     startIcon: Start,
                     reviews: '4.9/5.0 - (5000 Reviews)',
                     briefcaseIcon: Briefcase,
@@ -82,7 +82,7 @@ export default {
 
                 {
                     title: 'Tarangire',
-                    bgImageUrl: SafariTour4,
+                    bgImageUrl: SafariTour2,
                     startIcon: Start,
                     reviews: '4.9/5.0 - (5000 Reviews)',
                     briefcaseIcon: Briefcase,
@@ -157,22 +157,11 @@ export default {
                 </button>
         </div>
 
-        <div class="md:flex xl:hidden" >
+        <div class="xl:hidden md:flex my-10 px-2" >
 
             <Swiper 
-                               :modules="modules"
-                                :breakpoints="{
-                                    // Breakpoint for medium screens
-                                    768: {
-                                        slidesPerView: 1,
-                                        spaceBetween: 10
-                                    },
-                                    // Breakpoint for extra large screens
-                                    1024: {
-                                        slidesPerView: 1,
-                                        spaceBetween: 20
-                                    }
-                                }"
+                                :modules="modules"
+                                :slides-per-view="1"
                                 :autoplay="{
                                     delay: 7000,
                                     disableOnInteraction: false,
@@ -186,7 +175,7 @@ export default {
    
                            >
    
-                       <SwiperSlide class="flex items-center my-10 px-2" v-for="object, objectIndex in safariTour" :key="objectIndex">
+                       <SwiperSlide class="flex items-center" v-for="object, objectIndex in safariTour" :key="objectIndex">
                            <div  class="rounded-b-lg bg-center bg-no-repeat bg-cover object-cover md:min-h-[400px] w-full text-white"
                                            :style="{ backgroundImage: `url(${object.bgImageUrl})` }">
    
@@ -202,8 +191,8 @@ export default {
                                        <p>{{ object.reviews }}</p>
    
                                        <!-- Open Two Box -->
-                                       <div class="flex flex-col space-y-4 items-center justify-center text-custom-gray px-2">
-                                           <div class="flex space-x-8 bg-white w-72 h-32 py-2 px-4 rounded-lg">
+                                       <div class="flex md:flex-col flex-row space-y-4 items-center justify-center text-custom-gray px-2">
+                                           <div class="flex items-center justify-center space-x-8 bg-white w-72 h-32 py-2 px-4 rounded-lg">
                                                <component :is="object.briefcaseIcon" class="fill-black mx-auto mt-4 w-20 h-20"/>
                                                <div class="flex flex-col justify-center">
                                                    <h1 class="text-xl font-bold px-2">{{ object.headerBriefcase }}</h1>
@@ -221,15 +210,15 @@ export default {
                                                    </div>
                                                </div>
                                        </div>
-                                       <!-- Open Two Box -->
-   
+                                       <!-- Open Two Box -->   
                                    </div>
                                    <!-- Close Review -->
    
                                    <!-- Open Paragraph with two btn -->
-                                   <div class="flex flex-col justify-center w-1/2 space-y-10 my-10">
+                                   <div class="flex flex-col justify-center space-y-10 my-10 px-2">
                                        <p class="text-justify text-xl">{{ object.moreInformation }}
                                        </p>
+                                       <!-- Open Two BTN -->
                                        <div class="flex gap-10">
                                            <button class="flex items-center gap-4 bg-green-400 hover:bg-custom-green px-4 py-4 rounded-lg">
                                                Top Operators
@@ -241,7 +230,10 @@ export default {
                                                <component :is="ArrowRightCircle" class="fill-current w-4 h-4 "/>
                                            </button>
                                        </div>
+                                       <!-- Close Two BTN -->
                                    </div>
+                                   <!-- Close Paragraph with two btn -->
+
                                </div>
                            </div>
    
