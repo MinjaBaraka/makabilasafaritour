@@ -116,7 +116,7 @@ export default {
                                 >
                                   <SwiperSlide   v-for="object, objectIndex in testimonial" :key="objectIndex" class="container flex mx-auto items-center justify-center cursor-pointer mb-20">                                       
                                              <div class="relative flex items-center max-w-xl justify-between">
-                                                <img :src="object.imageUrl" alt="FeedBack" class="w-32 h-32 rounded-full">
+                                                <img :src="object.imageUrl" alt="FeedBack" class="w-24 h-24 rounded-full">
                                                 <div class="flex flex-col justify-center">
                                                     <div class="flex flex-row justify-between mx-2">
                                                        <h2 class="xl:text-3xl text-2xl text-[#5252FF] font-bold mb-2">

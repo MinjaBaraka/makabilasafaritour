@@ -30,13 +30,15 @@ export default {
         <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 space-y-10 md:space-y-0 md:gap-6 mt-10">
 
             <!-- Open Grid Container -->
-            <div class="flex flex-col justify-center w-full" v-for="object, objectIndex in iconMenu" :key="objectIndex">
+            <div class="relative flex flex-col justify-center w-full" v-for="object, objectIndex in iconMenu" :key="objectIndex">
 
                 <div class="w-full h-80 mb-6">
                     <img :src="object.imgUrl" alt="Main Image" class="h-full w-full object-cover rounded-lg">
                 </div>
                 
-                <h1 class="-mt-20 md:text-4xl text-2xl text-white font-bold px-2">{{ object.title }}</h1>                
+                <div class="absolute md:top-60 top-[80%]">
+                    <h1 class=" md:text-4xl text-2xl text-white font-bold px-2">{{ object.title }}</h1>
+                </div>
             </div>
             <!-- Close Grid Container -->
         </div>

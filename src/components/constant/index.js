@@ -9,6 +9,8 @@ import Start from "../../assets/svgs/regular/star.svg";
 import Heart from "../../assets/svgs/regular/heart.svg";
 import AngleRight from "../../assets/svgs/solid/angle-right.svg";
 import HouseDoor from "../../assets/svgs/icons/house-door-fill.svg";
+import ArrowRightCircle from "../../assets/svgs/icons/arrow-right-circle.svg";
+import History from "../../assets/svgs/solid/history.svg";
 
 // Social Media
 import Twitter from "../../assets/svgs/brands/twitter.svg";
@@ -29,6 +31,8 @@ export {
   Heart,
   AngleRight,
   HouseDoor,
+  ArrowRightCircle,
+  History,
 
   // Social Media
   Twitter,

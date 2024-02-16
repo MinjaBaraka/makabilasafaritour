@@ -35,7 +35,7 @@ export default {
 
                   <!-- More Safari Button -->
                 <button
-                    class="hidden md:flex capitalize mt-4 md:mr-4 xl:mr-0 items-center justify-center self-end bg-custom-green px-10 py-4 text-white rounded-lg">
+                    class="hidden md:flex capitalize mt-4 md:mr-4 xl:mr-0 items-center justify-center self-end bg-green-400 hover:bg-custom-green px-10 py-4 text-white rounded-lg">
                     More safari...
                 </button>
         </div>

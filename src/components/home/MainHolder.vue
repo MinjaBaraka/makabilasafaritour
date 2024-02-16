@@ -53,7 +53,7 @@ export default {
                                 <component :is="Briefcase" class="absolute xl:left-[25%] md:left-[30%] left-[72%] w-6 h-6 fill-custom-green"/>
                             </label>
 
-                            <input type="button" value="Get Safari" class="cursor-pointer bg-custom-green w-full px-12 py-3 rounded-lg text-white">
+                            <input type="button" value="Get Safari" class="cursor-pointer bg-green-400 hover:bg-custom-green w-full px-12 py-3 rounded-lg text-white">
                         </form>
                     </div>
                 </div>

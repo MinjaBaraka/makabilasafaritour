@@ -25,37 +25,40 @@ export default {
 
 <template>
     <header class="sticky top-0 z-50 ">
-        <nav class="container mx-auto flex items-center justify-between py-8 px-6 xl:px-0 bg-white">
+        <div class=" bg-white">
 
-            <!-- Logo -->
-            <div class="">
-                <h1 class="text-green-500 font-bold text-2xl">Makabila Safari</h1>
-            </div>
-
-            <!-- Menu List -->
-            <div class="hidden xl:flex items-center space-x-8">
-                <ul class="outline-none" v-for="object, objectIndex in menu" :key="objectIndex">
-                    <li class="cursor-pointer ">
-                        <router-link :to="object.link" class="hover:text-green-500 animation_text">{{ object.title }}</router-link>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Search -->
-            <div class="hidden xl:block">
-                <form action="" class="flex">
-                    <label for="search" class="relative flex rounded-lg items-center p-2">
-                        <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
-                        <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
-                    </label>
-                </form>
-            </div>
-
-            <!-- Mobile Menu Icon -->
-            <div class="xl:hidden block">
-                <component :is="Menu" class="fill-current stroke-green-500"/>
-            </div>
-        </nav>
+            <nav class="container mx-auto flex items-center justify-between py-8 px-6 xl:px-0">
+    
+                <!-- Logo -->
+                <div class="">
+                    <h1 class="text-green-500 font-bold text-2xl">Makabila Safari</h1>
+                </div>
+    
+                <!-- Menu List -->
+                <div class="hidden xl:flex items-center space-x-8">
+                    <ul class="outline-none" v-for="object, objectIndex in menu" :key="objectIndex">
+                        <li class="cursor-pointer ">
+                            <router-link :to="object.link" class="hover:text-green-500 animation_text">{{ object.title }}</router-link>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Search -->
+                <div class="hidden xl:block">
+                    <form action="" class="flex">
+                        <label for="search" class="relative flex rounded-lg items-center p-2">
+                            <component :is="Search" class="absolute xl:right-[10%] w-6 h-6 fill-custom-green"/>
+                            <input  type="text" placeholder="search..." id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg cursor-pointer">                                    
+                        </label>
+                    </form>
+                </div>
+    
+                <!-- Mobile Menu Icon -->
+                <div class="xl:hidden block">
+                    <component :is="Menu" class="fill-current stroke-green-500"/>
+                </div>
+            </nav>
+        </div>
 
         <div class="hidden">
             <!-- Mobile List Menu -->
@@ -77,6 +80,7 @@ export default {
                             </label>
                         </form>
                     </div>
-            </div></div>
+            </div>
+        </div>
     </header>
 </template>
