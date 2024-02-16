@@ -11,6 +11,7 @@ export default {
         "custom-green": "#279E72",
         "custom-gray": "#808080",
         "Custom-yellow": "#FFFF00",
+        "custom-blue": "#5252FF",
       },
       boxShadow: {
         shadow_container:

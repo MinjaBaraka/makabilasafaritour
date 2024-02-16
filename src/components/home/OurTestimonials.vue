@@ -119,7 +119,7 @@ export default {
                                                 <img :src="object.imageUrl" alt="FeedBack" class="w-24 h-24 rounded-full">
                                                 <div class="flex flex-col justify-center">
                                                     <div class="flex flex-row justify-between mx-2">
-                                                       <h2 class="xl:text-3xl text-2xl text-[#5252FF] font-bold mb-2">
+                                                       <h2 class="xl:text-3xl text-2xl text-custom-blue font-bold mb-2">
                                                               {{ object.name }}                                    
                                                        </h2>
                                                         <div class="flex flex-row items-center space-x-2">

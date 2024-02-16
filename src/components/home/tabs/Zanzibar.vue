@@ -32,7 +32,7 @@ export default {
 
             <!-- Open Review -->
             <div class="flex flex-col items-center justify-center w-1/2 space-y-4">
-                <h1 class="md:text-6xl text-4xl font-semibold">Zanzibar</h1>
+                <h1 class="text-6xl font-semibold">Zanzibar</h1>
 
                 <div class="flex space-x-4 cursor-pointer">
                     <component :is="Start" class="w-6 h-6 fill-amber-500"  v-for="n in 5" :key="n"/>
@@ -66,13 +66,14 @@ export default {
             <!-- Close Review -->
 
              <!-- Open Paragraph with two btn -->
-             <div class="flex flex-col justify-center w-1/2 space-y-10">
-                <p class="text-justify text-xl">Zanzibar[a] is an insular semi-autonomous region which united with 
-                    Tanganyika in 1964 to form the United Republic of Tanzania. 
-                    It is an archipelago in the Indian Ocean, 25–50 km (16–31 mi) off the coast of the African mainland, 
-                    and consists of many small islands and two large ones: Unguja (the main island, referred to informally
-                     as Zanzibar) and Pemba Island. The capital is Zanzibar City, located on the island of Unguja.
-                    Its historic centre, Stone Town, is a World Heritage Site.
+             <div class="flex flex-col justify-center w-1/2 space-y-10 px-4">
+                <p class="text-justify text-xl">
+                            Zanzibar is an insular semi-autonomous region which united with
+                            Tanganyika in 1964 to form the United Republic of Tanzania. 
+                            It is an archipelago in the Indian Ocean, 25-50km (16-31 mi) off the coast of the African mainland, 
+                            and consists of many small islands and two large ones: Unguja (the main island, referred to informally as Zanzibar) 
+                            and Pemba Island. The capital is Zanzibar City, located on the island of Unguja. 
+                            Its historic centre, Stone Town, is a World Heritage Site.
                 </p>
                 <div class="flex gap-10">
                     <button class="flex items-center gap-4 bg-green-400 hover:bg-custom-green px-4 py-4 rounded-lg">

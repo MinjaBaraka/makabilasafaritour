@@ -137,17 +137,15 @@ export default {
         <div class="container flex flex-col mx-auto  items-start justify-center px-2">
             <h1 class="h1">Top Safari Tours</h1>
               <div
-                    class="hidden xl:flex mt-10 outline-none border-2 border-green-400 w-full h-28 rounded-t-lg items-center justify-between px-6">
-                    <ul class="text-[#279E72] text-xl cursor-pointer" v-for="object, objectIndex in tabMenu" :key="objectIndex" @click="selectTitle = object">
+                    class="hidden xl:flex mt-10 outline-none border-2 border-green-500 w-full h-28 rounded-t-lg items-center justify-between px-6">
+                    <ul class="text-green-400 hover:text-custom-green text-xl cursor-pointer" v-for="object, objectIndex in tabMenu" :key="objectIndex" @click="selectTitle = object">
                         <li class="">
                             {{ object }}
                         </li>
                     </ul>
                 </div>
 
-                <slot />
-
-           
+                <slot />          
                  
 
                   <!-- More Safari Button -->
@@ -157,7 +155,7 @@ export default {
                 </button>
         </div>
 
-        <div class="xl:hidden md:flex my-10 px-2" >
+        <div class="xl:hidden flex mx-auto my-10 px-2" >
 
             <Swiper 
                                 :modules="modules"
@@ -175,14 +173,14 @@ export default {
    
                            >
    
-                       <SwiperSlide class="flex items-center" v-for="object, objectIndex in safariTour" :key="objectIndex">
-                           <div  class="rounded-b-lg bg-center bg-no-repeat bg-cover object-cover md:min-h-[400px] w-full text-white"
+                       <SwiperSlide class="flex items-center mb-16" v-for="object, objectIndex in safariTour" :key="objectIndex">
+                           <div  class="container flex mx-auto px-2 rounded-lg bg-center bg-no-repeat bg-cover object-cover min-h-[400px] w-full text-white"
                                            :style="{ backgroundImage: `url(${object.bgImageUrl})` }">
    
                                    <div class="container flex flex-col md:flex-row items-center justify-center gap-6 mx-auto max-w-7xl px-2">
    
                                    <!-- Open Review -->
-                                   <div class="flex flex-col items-center justify-center w-1/2 space-y-4 my-10">
+                                   <div class="flex flex-col items-center justify-center w-1/2 space-y-4 my-8">
                                        <h1 class="text-5xl font-semibold">{{ object.title }}</h1>
    
                                        <div class="flex space-x-4 cursor-pointer">
@@ -191,16 +189,16 @@ export default {
                                        <p>{{ object.reviews }}</p>
    
                                        <!-- Open Two Box -->
-                                       <div class="flex md:flex-col flex-row space-y-4 items-center justify-center text-custom-gray px-2">
-                                           <div class="flex items-center justify-center space-x-8 bg-white w-72 h-32 py-2 px-4 rounded-lg">
+                                       <div class="flex flex-col space-y-4 items-center justify-center text-custom-gray px-2">
+                                           <div class="flex items-center justify-center space-x-8 bg-white w-80 h-32 py-2 px-4 rounded-lg">
                                                <component :is="object.briefcaseIcon" class="fill-black mx-auto mt-4 w-20 h-20"/>
                                                <div class="flex flex-col justify-center">
-                                                   <h1 class="text-xl font-bold px-2">{{ object.headerBriefcase }}</h1>
+                                                   <h1 class="text-xl font-bold ">{{ object.headerBriefcase }}</h1>
                                                    <p>{{ object.paragraphBriefcase }}</p>
                                                </div>
                                            </div>
    
-                                           <div class="flex space-x-10 bg-white w-72 h-32 py-2 px-4 rounded-lg">
+                                           <div class="flex space-x-10 bg-white w-80 h-32 py-2 px-4 rounded-lg">
                                                    <component :is="object.historyIcon" class="fill-black mx-auto mt-4 w-20 h-20"/>
                                                    <div class="flex flex-col justify-center">
                                                        <h1 class="text-xl font-bold px-2">{{ object.headerHistory }}</h1>
@@ -208,7 +206,7 @@ export default {
                                                            {{ object.paragraphHistory }} 
                                                        </p>
                                                    </div>
-                                               </div>
+                                            </div>
                                        </div>
                                        <!-- Open Two Box -->   
                                    </div>
@@ -219,8 +217,8 @@ export default {
                                        <p class="text-justify text-xl">{{ object.moreInformation }}
                                        </p>
                                        <!-- Open Two BTN -->
-                                       <div class="flex gap-10">
-                                           <button class="flex items-center gap-4 bg-green-400 hover:bg-custom-green px-4 py-4 rounded-lg">
+                                       <div class="container flex gap-10">
+                                           <button class="flex items-center gap-4 bg-green-400 hover:bg-custom-green px-3 md:px-4 py-4 rounded-lg">
                                                Top Operators
                                                <component :is="ArrowRightCircle" class="fill-current w-4 h-4"/>
                                            </button>
@@ -241,7 +239,6 @@ export default {
    
                    </Swiper>
         </div>
-        
     </section>
     
 
