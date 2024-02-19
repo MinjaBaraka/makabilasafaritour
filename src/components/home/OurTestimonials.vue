@@ -5,7 +5,7 @@ import FeedBack2 from '../../assets/images/feedBack/feedback2.jpg'
 import FeedBack3 from '../../assets/images/feedBack/feedback3.jpg'
 
 
-import { Start, StarFill } from "../constant"
+import { Start, StarFill, StarHalf } from "../constant"
 
 import { ref } from 'vue';
 
@@ -34,7 +34,7 @@ export default {
             {
                 imageUrl: FeedBack1,
                 name: 'John Doe',
-                icon: StarFill,
+                icon: StarHalf,
                 rate: "(' 4.5 ')",
                 message: 'Mike is an award-winning wildlife writer, former editor of Travel Zambia magazine  and author of the Bradt Guide to Southern African Wildlife.'
             },
@@ -43,7 +43,7 @@ export default {
                 imageUrl: FeedBack2,
                 name: 'John Doe',
                 icon: StarFill,
-                rate: "(' 3.5 ')",
+                rate: "(' 5 ')",
                 message: 'Mike is an award-winning wildlife writer, former editor of Travel Zambia magazine  and author of the Bradt Guide to Southern African Wildlife.'
             },
 
@@ -58,8 +58,16 @@ export default {
             {
                 imageUrl: FeedBack1,
                 name: 'John Doe',
-                icon: StarFill,
+                icon: StarHalf,
                 rate: "(' 4.5 ')",
+                message: 'Mike is an award-winning wildlife writer, former editor of Travel Zambia magazine  and author of the Bradt Guide to Southern African Wildlife.'
+            },
+
+             {
+                imageUrl: FeedBack1,
+                name: 'John Doe',
+                icon: StarFill,
+                rate: "(' 5 ')",
                 message: 'Mike is an award-winning wildlife writer, former editor of Travel Zambia magazine  and author of the Bradt Guide to Southern African Wildlife.'
             },
         ]);
