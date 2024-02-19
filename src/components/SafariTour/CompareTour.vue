@@ -128,7 +128,7 @@ export default {
                         <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 mb-10 gap-10">
                             <div class="flex flex-col justify-center w-full h-96"  v-for="object, objectIndex in compareTour" :key="objectIndex">
                                 <div class="w-full h-64 mb-4">
-                                    <img :src="object.urlImage" alt="Safari Tour" class="w-full h-full object-cover rounded-lg">
+                                    <img :src="object.urlImage" alt="Safari Tour" class="w-full h-full object-cover rounded-lg select-none">
                                 </div>
 
                                 <!-- Open Money Description -->

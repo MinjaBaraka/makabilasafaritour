@@ -33,7 +33,7 @@ export default {
             <div class="relative flex flex-col justify-center w-full" v-for="object, objectIndex in iconMenu" :key="objectIndex">
 
                 <div class="w-full h-80 mb-6">
-                    <img :src="object.imgUrl" alt="Main Image" class="h-full w-full object-cover rounded-lg">
+                    <img :src="object.imgUrl" alt="Main Image" class="h-full w-full object-cover rounded-lg select-none">
                 </div>
                 
                 <div class="absolute md:top-60 top-[80%]">

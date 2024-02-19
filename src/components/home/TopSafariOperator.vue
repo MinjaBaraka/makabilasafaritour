@@ -36,7 +36,7 @@ export default {
                 <!-- Open Grid Container -->
                 <div class="flex flex-col justify-center w-full" v-for="object, objectIndex in iconMenu" :key="objectIndex">
                     <div class="h-60 w-full mt-10">
-                        <img :src="object.imgUrl" alt="" class="w-full h-full rounded-md object-cover">
+                        <img :src="object.imgUrl" alt="" class="w-full h-full rounded-md object-cover select-none">
                     </div>
                    <div class="flex justify-between my-6 cursor-pointer">
                         <!-- Start Icon and Text -->
