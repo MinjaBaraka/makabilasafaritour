@@ -5,12 +5,15 @@ import Location from "../../assets/svgs/solid/map-marker-alt.svg";
 import Calendar from "../../assets/svgs/solid/calendar-alt.svg";
 import Briefcase from "../../assets/svgs/regular/briefcase-line.svg";
 import Circle from "../../assets/svgs/regular/circle.svg";
-import Start from "../../assets/svgs/regular/star.svg";
 import Heart from "../../assets/svgs/regular/heart.svg";
 import AngleRight from "../../assets/svgs/solid/angle-right.svg";
 import HouseDoor from "../../assets/svgs/icons/house-door-fill.svg";
 import ArrowRightCircle from "../../assets/svgs/icons/arrow-right-circle.svg";
 import History from "../../assets/svgs/solid/history.svg";
+
+import Start from "../../assets/svgs/icons/star.svg";
+import StarHalf from "../../assets/svgs/icons/star-half.svg";
+import StarFill from "../../assets/svgs/icons/star-fill.svg";
 
 // Social Media
 import Twitter from "../../assets/svgs/brands/twitter.svg";
@@ -27,12 +30,16 @@ export {
   Calendar,
   Briefcase,
   Circle,
-  Start,
   Heart,
   AngleRight,
   HouseDoor,
   ArrowRightCircle,
   History,
+
+  // Start
+  Start,
+  StarFill,
+  StarHalf,
 
   // Social Media
   Twitter,

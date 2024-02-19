@@ -73,6 +73,26 @@ export default {
                 moneyDescriptio: "$1500 to $2100 pp (USD)",
                 visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
             },
+
+                {
+                urlImage: Blog2,
+                title: "5 Days Unforgatable Safaris",
+                moneyDescriptio: "$1500 to $2100 pp (USD)",
+                visited: "Serengeti(start), Tarangire, Manyara(End)",
+            },
+
+            {
+                urlImage: Blog3,
+                title: "5 Days Unforgatable Safaris",
+                moneyDescriptio: "$1500 to $2100 pp (USD)",
+                visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
+            },
+             {
+                urlImage: Blog1,
+                title: "5 Days Unforgatable Safaris",
+                moneyDescriptio: "$1500 to $2100 pp (USD)",
+                visited: "Serengeti(start), Tarangire, Manyara(End)",
+            },
         ])
 
         return {
@@ -89,7 +109,7 @@ export default {
      
     <div class="container flex flex-col xl:flex-row items-center mx-auto text-custom-gray space-x-6 px-4 md:px-0">
 
-        <div class="flex flex-col  mx-auto text-custom-gray px-4 md:px-0">
+        <div class="flex flex-col  mx-auto text-custom-gray px-4 md:px-0 self-start">
                      <h1 class="text-2xl font-bold mb-6">Tanzania Safari Tours - Compare Safari</h1>
 
 
@@ -147,34 +167,33 @@ export default {
 
         
                    
-                     <div class="container flex flex-col mx-auto space-y-10 xl:w-1/4 px-4 md:px-0">
+                     <div class="container flex flex-col mx-auto space-y-8 xl:w-1/4 px-4 md:px-0">
 
-                            <!-- Open Your Safari Tour. -->
-                           <FormSafariTour />
-                           <!-- Open Your Safari Tour. -->
+                        <!-- Open Your Safari Tour. -->
+                        <FormSafariTour />
+                        <!-- Open Your Safari Tour. -->
 
-                           <!-- Open Tour Range -->
-                           <TourRange />
-                           <!-- Close Tour Range -->
-
-
-                           <!-- Open Rate in USD -->
-                               <RateUSD />
-                            <!-- Close Rate in USD -->
+                        <!-- Open Tour Range -->
+                        <TourRange />
+                        <!-- Close Tour Range -->
 
 
-                            <!-- Open Comfort Type -->
-                            <ComfortType />
-                            <!-- Close Comfort Type -->
-
-
-                            <!-- Open Operator Rating -->
-                            <OperatorRating />
-                            <!-- Close Operator Rating -->
-
-                            <!-- Open Specilized Tour -->
-                            <SpecilizedTour />
-                            <!-- Close Specilized Tour -->
+                        <!-- Open Rate in USD -->
+                        <RateUSD />
+                        <!-- Close Rate in USD -->
+                        
+                        <!-- Open Comfort Type -->
+                        <ComfortType />
+                        <!-- Close Comfort Type -->
+                        
+                        
+                        <!-- Open Operator Rating -->
+                        <OperatorRating />
+                        <!-- Close Operator Rating -->
+                        
+                        <!-- Open Specilized Tour -->
+                        <SpecilizedTour />
+                        <!-- Close Specilized Tour -->
 
                        </div>
 
