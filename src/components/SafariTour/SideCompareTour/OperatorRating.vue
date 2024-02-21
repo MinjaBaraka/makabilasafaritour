@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { Start, StarFill } from "../../constant"
 export default {
 
-    setup () {
+    setup() {
 
         const checkedCategory = ref("");
 
@@ -30,6 +30,7 @@ export default {
 
 }
 </script>
+
 <template>
     <div class="bg-white h-fit">
         <h1 class="text-2xl font-bold text-custom-gray">Operator Rating.</h1>
