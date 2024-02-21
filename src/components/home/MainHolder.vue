@@ -38,7 +38,7 @@ export default {
                             <!-- Where... -->
                             <label for="where" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
-                                <component :is="Location" class="absolute xl:left-[25%] lg:left-[29%] md:left-[38%] left-[72%] w-6 h-6 fill-custom-green"/>
+                                <component :is="Location" class="absolute 2xl:left-[25%] lg:left-[29%] md:left-[38%] left-[72%] w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <!-- Date... -->
