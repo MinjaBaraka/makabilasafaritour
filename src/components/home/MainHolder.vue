@@ -31,26 +31,26 @@ export default {
         <div class=" container flex flex-col mx-auto mt-2" >
             <div class="rounded-md bg-center bg-no-repeat bg-cover min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
                 <div class="container md:ml-10 my-14 bg-white w-80 mx-auto rounded-md shadow-shadow_container">
-                    <div class="flex flex-col items-center md:mx-auto ">
+                    <div class="container flex flex-col mx-auto items-center md:mx-auto ">
                         <h1 class="mt-10 text-xl font-bold text-custom-gray">Get Top African Safaris</h1>
 
-                        <form action="" class="flex flex-col items-center space-y-6 my-10">
+                        <form action="" class="relative flex flex-col items-center space-y-6 my-10">
                             <!-- Where... -->
                             <label for="where" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
-                                <component :is="Location" class="absolute 2xl:left-[25%] lg:left-[29%] md:left-[38%] left-[72%] w-6 h-6 fill-custom-green"/>
+                                <component :is="Location" class="relative right-8 w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <!-- Date... -->
                             <label for="date" class="flex  rounded-lg items-center p-2">
                                      <input datepicker type="text" id="date" class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg" placeholder="Select date">                                    
-                                    <component :is="Calendar" class="absolute xl:left-[25%] lg:left-[29%] md:left-[38%] left-[72%] w-6 h-6 fill-custom-green"/>
+                                    <component :is="Calendar" class="relative right-8 w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <!-- Travellers... -->
                             <label for="travellers" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="travellers" placeholder="Travellers..." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">
-                                <component :is="Briefcase" class="absolute xl:left-[25%] lg:left-[29%] md:left-[38%] left-[72%] w-6 h-6 fill-custom-green"/>
+                                <component :is="Briefcase" class="relative right-8 w-6 h-6 fill-custom-green"/>
                             </label>
 
                             <input type="button" value="Get Safari" class="cursor-pointer bg-green-400 hover:bg-custom-green w-full px-12 py-3 rounded-lg text-white">
