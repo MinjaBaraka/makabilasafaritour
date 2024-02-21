@@ -7,6 +7,7 @@ export default {
 
         const menu = ref([
             { title: 'Home', link: '/' },
+            { title: 'About Us', link: '/AboutUs' },
             { title: 'Tours', link: '/Tours' },
             { title: 'Parks', link: '' },
             { title: 'Operators', link: '' },

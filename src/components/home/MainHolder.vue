@@ -34,7 +34,7 @@ export default {
                     <div class="container flex flex-col mx-auto items-center md:mx-auto ">
                         <h1 class="mt-10 text-xl font-bold text-custom-gray">Get Top African Safaris</h1>
 
-                        <form action="" class="relative flex flex-col items-center space-y-6 my-10">
+                        <form action="" class="flex flex-col items-center space-y-6 my-10">
                             <!-- Where... -->
                             <label for="where" class="flex  rounded-lg items-center p-2">
                                 <input type="text" id="where" placeholder="Where.." class="outline-none border-2 border-custom-green focus:border-custom-green py-3 px-3 w-full rounded-lg">

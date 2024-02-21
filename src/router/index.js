@@ -11,11 +11,18 @@ const routes = [
     name: "Tours",
     component: () => import("../views/SafariTour.vue"),
   },
+  {
+    path: "/AboutUs",
+    name: "AboutUs",
+    component: () => import("../views/AboutUs.vue"),
+  },
+  
   //   {
   //     path: "",
   //     name: "",
   //     // component: () => import("")
   //   },
+
   //   {
   //     path: "",
   //     name: "",

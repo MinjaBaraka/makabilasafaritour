@@ -31,10 +31,11 @@ export default {
         ])
 
         const quickLinks = ref([
-            { title: 'Tours', link: '' },
+            { title: 'Home', link: '/' },
+            { title: 'About Us', link: '/AboutUs' },
+            { title: 'Tours', link: '/Tours' },
             { title: 'Operators', link: '' },
             { title: 'Parks', link: '' },
-            { title: 'About Us', link: '' },
             { title: 'Makabila AI', link: '' },
         ])
 
@@ -110,7 +111,7 @@ export default {
                     </div>
                       <ul class="outline-none space-y-2">
                                 <li v-for="object, objectIndex in quickLinks" :key="objectIndex">
-                                    <a href="" class="hover:text-green-500">{{object.title}}</a>
+                                    <router-link :to="object.link" class="hover:text-green-500">{{object.title}}</router-link>
                                 </li>
                             </ul>
                 </div>
