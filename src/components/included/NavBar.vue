@@ -27,7 +27,7 @@ export default {
     <header class="sticky top-0 z-50 ">
         <div class=" bg-white">
 
-            <nav class="container mx-auto flex items-center justify-between py-8 px-6 xl:px-0">
+            <nav class="container 2xl:mx-auto flex items-center justify-between py-8 px-6 xl:px-0">
     
                 <!-- Logo -->
                 <div class="">

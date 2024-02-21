@@ -1,5 +1,7 @@
+import Menu from "../../assets/svgs/solid/bars.svg";
+import xLG from "../../assets/svgs/icons/x-lg.svg";
+
 import Search from "../../assets/svgs/icons/search.svg";
-import Menu from "../../assets/svgs/icons/justify.svg";
 import Envelope from "../../assets/svgs/icons/envelope.svg";
 import Location from "../../assets/svgs/solid/map-marker-alt.svg";
 import Calendar from "../../assets/svgs/solid/calendar-alt.svg";
@@ -23,8 +25,10 @@ import LinkedIn from "../../assets/svgs/brands/linkedin-in.svg";
 import Youtube from "../../assets/svgs/brands/youtube.svg";
 
 export {
-  Search,
   Menu,
+  xLG,
+  
+  Search,
   Envelope,
   Location,
   Calendar,
