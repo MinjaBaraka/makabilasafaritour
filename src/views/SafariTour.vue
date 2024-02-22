@@ -2,6 +2,6 @@
 import { TourNavigator, CompareTour } from '../components'
 </script>
 <template>
-<TourNavigator />
-<CompareTour />
+<TourNavigator class="max-w-7xl mx-auto" />
+<CompareTour class="max-w-7xl mx-auto" />
 </template>
