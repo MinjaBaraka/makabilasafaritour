@@ -3,9 +3,9 @@ import { MainHolder, TopSafariTour, TopSafariOperator, LatestBlogPosts, OurTesti
 </script>
 
 <template>
-  <MainHolder class="max-w-max mx-auto"/>
-  <TopSafariTour class="max-w-7xl mx-auto" />
-  <TopSafariOperator class="max-w-7xl mx-auto" />
-  <LatestBlogPosts class="max-w-7xl mx-auto" />
-  <OurTestimonials class="max-w-7xl mx-auto" />
+  <MainHolder class="max-w-screen-xl mx-auto"/>
+  <TopSafariTour class="max-w-screen-xl mx-auto" />
+  <TopSafariOperator class="max-w-screen-xl mx-auto" />
+  <LatestBlogPosts class="max-w-screen-xl mx-auto" />
+  <OurTestimonials class="max-w-screen-xl mx-auto" />
 </template>
