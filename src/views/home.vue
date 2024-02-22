@@ -3,7 +3,7 @@ import { MainHolder, TopSafariTour, TopSafariOperator, LatestBlogPosts, OurTesti
 </script>
 
 <template>
-  <MainHolder />
+  <MainHolder class=""/>
   <TopSafariTour />
   <TopSafariOperator />
   <LatestBlogPosts />
