@@ -66,7 +66,7 @@ export default {
 
 <template>
    <footer class="bg-[#3F3D3D]">
-        <div class="container flex flex-col mx-auto text-white px-4">
+        <div class="container flex flex-col mx-auto text-white px-4 max-w-7xl">
             <!-- Header Text -->
             <div class="flex flex-col space-y-4 mt-10">
                 <h1 class="text-2xl">About Makabila Safari</h1>
