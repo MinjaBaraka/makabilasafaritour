@@ -107,7 +107,7 @@ export default {
 <template>
   <section class="my-10">
      
-    <div class="container flex flex-col xl:flex-row items-center mx-auto text-custom-gray space-x-6 md:max-2xl:px-4 md:px-0">
+    <div class="container flex flex-col-reverse xl:flex-row items-center mx-auto text-custom-gray space-x-6 md:max-2xl:px-4 md:px-0">
 
         <div class="flex flex-col  mx-auto text-custom-gray px-4 md:px-0 self-start">
                      <h1 class="text-2xl font-bold mb-6">Tanzania Safari Tours - Compare Safari</h1>
