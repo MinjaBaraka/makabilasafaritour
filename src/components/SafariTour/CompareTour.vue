@@ -8,12 +8,9 @@ import ComfortType from './SideCompareTour/ComfortType.vue';
 import OperatorRating from './SideCompareTour/OperatorRating.vue';
 import SpecilizedTour from './SideCompareTour/SpecilizedTour.vue';
 
-import {Blog1, Blog2, Blog3, Blog4 } from "../constant/images"
-
 import { AngleRight, } from '../constant/svg'
 
-
-import { ref } from 'vue'
+import { getCompareById } from "../constant/modal"
 
 
 export default {
@@ -30,73 +27,9 @@ export default {
 
     setup () {
 
-        const compareTour = ref([
-            {
-                urlImage:Blog4,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Manyara(start), Tarangire, Ngorongoro crater(End)",
-            },
-
-            {
-                urlImage: Blog2,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
-            },
-
-             {
-                urlImage: Blog1,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Serengeti(start), Tarangire, Manyara(End)",
-            },
-
-            {
-                urlImage: Blog4,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
-            },
-              {
-                urlImage: Blog2,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Serengeti(start), Tarangire, Manyara(End)",
-            },
-
-            {
-                urlImage: Blog3,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
-            },
-
-                {
-                urlImage: Blog2,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Serengeti(start), Tarangire, Manyara(End)",
-            },
-
-            {
-                urlImage: Blog3,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Zanzibar(start), Mikumi, Kilimanjaro(End)",
-            },
-             {
-                urlImage: Blog1,
-                title: "5 Days Unforgatable Safaris",
-                moneyDescriptio: "$1500 to $2100 pp (USD)",
-                visited: "Serengeti(start), Tarangire, Manyara(End)",
-            },
-        ])
-
         return {
-            compareTour,
+            getCompareById,
             AngleRight,
-
         }
     }
    
@@ -124,7 +57,7 @@ export default {
                         <!-- Close 1 - 50 of 50 Tanzania Safari Tours -->
 
                         <div class="container flex flex-col items-center justify-center md:grid xl:grid-cols-3 grid-cols-2 mb-10 gap-10">
-                            <div class="flex flex-col justify-center w-full h-96"  v-for="object, objectIndex in compareTour" :key="objectIndex">
+                            <div class="flex flex-col justify-center w-full h-96"  v-for="object, objectIndex in getCompareById" :key="objectIndex">
                                 <div class="w-full h-64 mb-4">
                                     <img :src="object.urlImage" alt="Safari Tour" class="w-full h-full object-cover rounded-lg select-none">
                                 </div>
@@ -175,19 +108,19 @@ export default {
                         <TourRange />
                         <!-- Close Tour Range -->
 
-
                         <!-- Open Rate in USD -->
                         <RateUSD />
                         <!-- Close Rate in USD -->
                         
+                        <!-- Open Operator Rating -->
+                        <OperatorRating />
+                        <!-- Close Operator Rating -->
+
+
                         <!-- Open Comfort Type -->
                         <ComfortType />
                         <!-- Close Comfort Type -->
                         
-                        
-                        <!-- Open Operator Rating -->
-                        <OperatorRating />
-                        <!-- Close Operator Rating -->
                         
                         <!-- Open Specilized Tour -->
                         <SpecilizedTour />

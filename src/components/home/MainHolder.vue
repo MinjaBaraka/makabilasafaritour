@@ -27,12 +27,12 @@ export default {
 </script>
 
 <template>
-    <section class="mb-10 min-h-[800px]">
+    <section class="mb-10 min-h-[800px] text-custom-gray">
         <div class=" container flex flex-col mx-auto mt-2" >
             <div class="rounded-md bg-center bg-no-repeat bg-cover min-h-[600px] mb-20" :style="{ backgroundImage: `url(${MainImage})` }">
                 <div class="container md:ml-10 my-14 bg-white w-80 mx-auto rounded-md shadow-shadow_container">
                     <div class="container flex flex-col mx-auto items-center md:mx-auto ">
-                        <h1 class="mt-10 text-xl font-bold text-custom-gray">Get Top African Safaris</h1>
+                        <h1 class="mt-10 text-xl font-bold">Get Top African Safaris</h1>
 
                         <form action="" class="flex flex-col items-center space-y-6 my-10">
                             <!-- Where... -->

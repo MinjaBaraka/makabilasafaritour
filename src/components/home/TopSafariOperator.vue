@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import {
     Operator1,
     Operator2,
-    Operator3,
+    // Operator3,
     Operator4,
 } from "../constant/images"
 
