@@ -1,7 +1,5 @@
 <script>
-import Blog1 from '../../assets/images/mainHeader/3.jpeg';
-import Blog2 from '../../assets/images/mainHeader/5.jpeg';
-import Blog3 from '../../assets/images/mainHeader/12.jpeg';
+import { Blog1, Blog2, Blog3, Blog4 } from "../constant/images"
 import { ref } from 'vue';
 export default {
     name: "Lastest Blog Posts",

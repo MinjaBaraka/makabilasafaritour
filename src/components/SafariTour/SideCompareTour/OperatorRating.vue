@@ -1,6 +1,6 @@
 <script>
 import { ref } from 'vue';
-import { Start, StarFill } from "../../constant"
+import { Start, StarFill } from "../../constant/svg"
 export default {
 
     setup() {

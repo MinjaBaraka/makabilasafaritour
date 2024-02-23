@@ -1,5 +1,5 @@
 <script>
-import { AngleRight, HouseDoor } from '../constant'
+import { AngleRight, HouseDoor } from '../constant/svg'
 export default {
     setup() {
 

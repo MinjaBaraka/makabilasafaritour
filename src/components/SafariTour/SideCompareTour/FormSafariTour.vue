@@ -1,5 +1,5 @@
 <script>
-import {   Calendar, Location, Briefcase, Circle } from '../../constant'
+import {   Calendar, Location, Briefcase, Circle } from '../../constant/svg'
 export default {
     setup () {
           return {

@@ -1,11 +1,13 @@
 <script>
 import { ref } from 'vue';
-import Operator1 from '../../assets/images/mainHeader/1.png';
-import Operator2 from '../../assets/images/mainHeader/3.jpeg';
-import Operator3 from '../../assets/images/mainHeader/5.jpeg';
-import Operator4 from '../../assets/images/mainHeader/12.jpeg';
+import {
+    Operator1,
+    Operator2,
+    Operator3,
+    Operator4,
+} from "../constant/images"
 
-import { Start, Heart } from "../constant"
+import { Start, Heart } from "../constant/svg"
 export default {
     name: "Top Safari Operator",
     setup() {

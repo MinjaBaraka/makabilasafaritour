@@ -10,7 +10,7 @@ import {
     Facebook,
     LinkedIn,
     Youtube
-} from "../../components/constant"
+} from "../../components/constant/svg"
 
 export default {
     setup () {

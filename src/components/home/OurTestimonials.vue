@@ -1,11 +1,9 @@
 <script>
 
-import FeedBack1 from '../../assets/images/feedBack/feedback1.jpg'
-import FeedBack2 from '../../assets/images/feedBack/feedback2.jpg'
-import FeedBack3 from '../../assets/images/feedBack/feedback3.jpg'
+import {FeedBack1,FeedBack2,FeedBack3} from "../constant/images"
 
 
-import { Start, StarFill, StarHalf } from "../constant"
+import { Start, StarFill, StarHalf } from "../constant/svg"
 
 import { ref } from 'vue';
 

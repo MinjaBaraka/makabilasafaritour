@@ -1,7 +1,7 @@
 <script>
 import { ref } from 'vue'
 
-import { Search, Menu } from '../../components/constant'
+import { Search, Menu } from '../../components/constant/svg'
 export default {
     setup () {
 

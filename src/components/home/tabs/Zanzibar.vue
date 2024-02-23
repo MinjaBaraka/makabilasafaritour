@@ -2,7 +2,7 @@
 import MainImage from '../../../assets/images/mainHeader/13.jpeg';
 import { inject } from 'vue';
 
-import {ArrowRightCircle, Start, Briefcase, History } from "../../constant"
+import {ArrowRightCircle, Start, Briefcase, History } from "../../constant/svg"
 export default {
     props: [
         'title'

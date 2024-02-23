@@ -5,7 +5,7 @@ import SafariTour2 from '../../../assets/images/mainHeader/5.jpeg';
 // import SafariTour4 from '../../../assets/images/mainHeader/12.png';
 import SafariTour5 from '../../../assets/images/mainHeader/13.jpeg';
 
-import { ArrowRightCircle, Start, Briefcase, History } from "../../constant"
+import { ArrowRightCircle, Start, Briefcase, History } from "../../constant/svg"
 
 
 // import Swiper core and required modules

@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import  MainImage  from '../../assets/images/mainHeader/5.jpeg';
 
-import { Calendar, Location, Briefcase, Circle } from "../constant"
+import { Calendar, Location, Briefcase, Circle } from "../constant/svg"
 export default {
     name: "Main Holder",
     setup () {

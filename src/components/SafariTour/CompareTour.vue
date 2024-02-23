@@ -1,22 +1,20 @@
 <script>
 
-// Import File from Folder called Side Compare Tour
+// Import Components from Folder called Side Compare Tour
 import FormSafariTour from './SideCompareTour/FormSafariTour.vue';
-
-import Blog1 from '../../assets/images/mainHeader/3.jpeg';
-import Blog2 from '../../assets/images/mainHeader/5.jpeg';
-import Blog3 from '../../assets/images/mainHeader/12.jpeg';
-import Blog4 from '../../assets/images/mainHeader/1.png';
-
-import { AngleRight } from '../constant'
-
-
-import { ref } from 'vue'
 import TourRange from './SideCompareTour/TourRange.vue';
 import RateUSD from './SideCompareTour/RateUSD.vue';
 import ComfortType from './SideCompareTour/ComfortType.vue';
 import OperatorRating from './SideCompareTour/OperatorRating.vue';
 import SpecilizedTour from './SideCompareTour/SpecilizedTour.vue';
+
+import {Blog1, Blog2, Blog3, Blog4 } from "../constant/images"
+
+import { AngleRight, } from '../constant/svg'
+
+
+import { ref } from 'vue'
+
 
 export default {
     name: "Compare Tour",
